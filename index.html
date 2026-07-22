@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Sanna & Shir | Bröllop</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Great+Vibes&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Dekorativ bakgrund -->
+    <div class="background"></div>
+
+    <!-- Här skapas fallande hjärtan med JavaScript -->
+    <div id="hearts"></div>
+
+    <!-- Första delen med kuvertet -->
+    <section id="intro">
+
+        <h2 class="welcome">
+            Bröllopsinbjudan
+        </h2>
+
+        <div
+            class="envelope"
+            id="envelope"
+            role="button"
+            tabindex="0"
+            aria-label="Öppna bröllopsinbjudan"
+        >
+
+            <div class="flap"></div>
+
+            <div class="blank-letter">
+
+                <div class="letter-title">
+                    Bröllop
+                </div>
+
+            </div>
+
+            <div
+                class="heart-burst"
+                id="heartBurst"
+            ></div>
+
+        </div>
+
+        <p class="open-text">
+            Klicka för att öppna kuvertet
+        </p>
+
+    </section>
+
+    <!-- Hela inbjudan visas när kuvertet öppnas -->
+    <main
+        id="website"
+        class="hidden"
+    >
+
+        <!-- Startsida -->
+        <section class="hero">
+
+            <p class="eyebrow">
+                Bröllop
+            </p>
+
+            <h1>
+                Shir & Sanna
+            </h1>
+
+            <h2>
+                Vi ska gifta oss
+            </h2>
+
+            <p class="date">
+                Lördag 26 december 2026
+            </p>
+
+            <p class="time">
+                Klockan 16.00
+            </p>
+
+            <div id="countdown">
+
+                <div class="countdown-box days-only">
+                    <span>157</span>
+                    <small>Dagar kvar</small>
+                </div>
+
+            </div>
+
+            <p class="scroll-text">
+                Scrolla ner för mer information ↓
+            </p>
+
+        </section>
+
+        <!-- Inbjudningstext -->
+        <section class="story">
+
+            <div class="section-content">
+
+                <p class="section-label">
+                    Vår stora dag
+                </p>
+
+                <h2>
+                    Välkommen till vårt bröllop
+                </h2>
+
+                <p>
+                    Med stor glädje vill vi bjuda in er till vårt bröllop. Vi hoppas att ni kan fira denna speciella dag tillsammans med oss. Det blir en dag fylld av kärlek, glädje och gemenskap där kurdiska och svenska traditioner möts.
+                </p>
+
+                <section class="couple-photo">
+
+    <img src="images/vi.png" alt="Sanna och Shir">
+
+</section>
+            </div>
+
+        </section>
+
+        <!-- Information om dagen -->
+        <section class="wedding">
+
+            <p class="section-label">
+                Information
+            </p>
+
+            <h2>
+                Bröllopsdagen
+            </h2>
+
+            <div class="info">
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        💍
+                    </div>
+
+                    <h3>
+                        Vigsel och fest
+                    </h3>
+
+                    <p>
+                        <strong>
+                            Lördag 26 december 2026
+                        </strong>
+                    </p>
+
+                    <p>
+                        Bröllopet börjar klockan
+                        <br>
+
+                        <strong class="highlight">
+                            16.00
+                        </strong>
+                    </p>
+
+                    <p>
+                        Vigseln och festen hålls på samma plats.
+                    </p>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        📍
+                    </div>
+
+                    <h3>
+                        Plats
+                    </h3>
+
+                    <address>
+                        <strong>
+                            Malmöpalatset
+                        </strong>
+
+                        <br>
+                        Pilgatan 3
+                        <br>
+                        212 12 Malmö
+                    </address>
+
+                    <a
+                        class="map-button"
+                        href="https://www.google.com/maps/search/?api=1&query=Malmöpalatset%2C+Pilgatan+3%2C+212+12+Malmö"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Visa på Google Maps
+                    </a>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="card-icon">
+                        👔👗
+                    </div>
+
+                    <h3>
+                        Klädsel
+                    </h3>
+
+                    <p>
+                        Formellt
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- Dagens schema -->
+        <section class="schedule">
+
+            <p class="section-label">
+                Planering
+            </p>
+
+            <h2>
+                Dagens schema
+            </h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+
+                    <span class="timeline-time">
+                        16.00
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Vigsel
+                        </h3>
+
+                        <p>
+                            Vi säger ja till varandra.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <span class="timeline-time">
+                        Efter vigseln
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Middag och firande
+                        </h3>
+
+                        <p>
+                            Firandet fortsätter tillsammans med våra gäster.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="timeline-item">
+
+                    <span class="timeline-time">
+                        Under kvällen
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Tårta, musik och dans
+                        </h3>
+
+                        <p>
+                            Vi fortsätter firandet tillsammans.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+                </div>
+
+        </section>
+
+        <!-- OSA och kontakt -->
+        <section class="rsvp">
+
+            <h2>
+                OSA
+            </h2>
+
+            <p class="rsvp-text">
+                Vänligen meddela oss om ni kan delta, hur många personer ni kommer samt om det finns några allergier
+
+                <strong>
+                    senast den 15 november 2026.
+                </strong>
+            </p>
+
+            <div class="contact-box">
+
+                <a
+                    class="contact-link"
+                    href="mailto:shirsanna24@gmail.com?subject=OSA%20till%20Sanna%20och%20Shirs%20bröllop"
+                >
+
+                    <span class="contact-icon">
+                        ✉️
+                    </span>
+
+                    <span>
+
+                        <small>
+                            E-post
+                        </small>
+
+                        shirsanna24@gmail.com
+
+                    </span>
+
+                </a>
+
+                <a
+                    class="contact-link"
+                    href="tel:+46727272216"
+                >
+
+                    <span class="contact-icon">
+                        📱
+                    </span>
+
+                    <span>
+
+                        <small>
+                            Telefon
+                        </small>
+
+                        072-727 22 16
+
+                    </span>
+
+                </a>
+
+            </div>
+
+            <p class="contact-message">
+                Vi hoppas att ni kan fira denna dag med oss. 🤍
+            </p>
+
+        </section>
+
+        <!-- Sidfot -->
+        <footer>
+
+            <p class="footer-names">
+                Shir & Sanna
+            </p>
+
+            <p>
+                26 december 2026
+            </p>
+
+            <p>
+                Malmöpalatset
+            </p>
+
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
